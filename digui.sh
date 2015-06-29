@@ -20,8 +20,6 @@ function tEst
 
 function Rm
 {
-	#[ tEst -eq 0 ] && return 0
-	#[ $p -gt 5 ] && return 0
 	flist=$(find /opt/logbak/ -type f -mtime $p)
 	let p++
 	if [ ! -z "$flist" ];then
